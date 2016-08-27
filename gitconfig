@@ -1,0 +1,11 @@
+[user]
+	email = funtaps@gmail.com
+	name = Kirill Funtov
+	signingkey = E620057B7B81D9F3
+[push]
+    default = current
+[alias]
+    fpush = push --force-with-lease
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[commit]
+    gpgsign = true

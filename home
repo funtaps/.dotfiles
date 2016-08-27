@@ -2,7 +2,7 @@
 
 set -e
 
-CONFIG="home.conf.yaml"
+CONFIG="dotbot_configs/home.conf.yaml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"

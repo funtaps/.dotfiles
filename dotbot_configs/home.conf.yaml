@@ -1,0 +1,17 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: git/gitconfig
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.config/nvim: editors/nvim
+    ~/.config/fish: shells/fishshell/fish
+    ~/.config/fish/fish_history: ~/.histories/fish_history
+    ~/.config/fish/fish_read_history: ~/.histories/fish_read_history
+    ~/.config/fisherman: shells/fishshell/fisherman
+    ~/.config/google-chrome: ~/.config/chromium

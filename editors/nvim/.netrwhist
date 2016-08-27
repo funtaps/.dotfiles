@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/kfuntov/.config/fish/functions'
+let g:netrw_dirhist_2='/files/Develop/px-profi/protected/controllers'
+let g:netrw_dirhist_3='/files/Develop/0286-profi2218/repetitors.info/configs-tmpl'

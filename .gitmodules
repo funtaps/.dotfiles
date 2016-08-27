@@ -1,3 +1,39 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "shells/fishshell/fisherman/cache/git_util"]
+	path = shells/fishshell/fisherman/cache/git_util
+	url = https://github.com/fisherman/git_util
+[submodule "shells/fishshell/fisherman/cache/cmorrell"]
+	path = shells/fishshell/fisherman/cache/cmorrell
+	url = https://github.com/oh-my-fish/theme-cmorrell.com
+[submodule "shells/fishshell/fisherman/cache/grc"]
+	path = shells/fishshell/fisherman/cache/grc
+	url = https://github.com/oh-my-fish/plugin-grc
+[submodule "shells/fishshell/fisherman/cache/bass"]
+	path = shells/fishshell/fisherman/cache/bass
+	url = https://github.com/edc/bass
+[submodule "shells/fishshell/fisherman/cache/thefuck"]
+	path = shells/fishshell/fisherman/cache/thefuck
+	url = https://github.com/oh-my-fish/plugin-thefuck
+[submodule "editors/nvim/plugged/vim-fugitive"]
+	path = editors/nvim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "editors/nvim/plugged/deoplete.nvim"]
+	path = editors/nvim/plugged/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "editors/nvim/plugged/neovim-colors-solarized-truecolor-only"]
+	path = editors/nvim/plugged/neovim-colors-solarized-truecolor-only
+	url = https://github.com/frankier/neovim-colors-solarized-truecolor-only.git
+[submodule "editors/nvim/plugged/vim-indent-guides"]
+	path = editors/nvim/plugged/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "editors/nvim/plugged/vim-multiple-cursors"]
+	path = editors/nvim/plugged/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "editors/nvim/plugged/vim-sensible"]
+	path = editors/nvim/plugged/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "editors/nvim/plugged/vim-surround"]
+	path = editors/nvim/plugged/vim-surround
+	url = https://github.com/tpope/vim-surround.git

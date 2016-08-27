@@ -11,7 +11,13 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.config/nvim: editors/nvim
     ~/.config/fish: shells/fishshell/fish
-    ~/.config/fish/fish_history: ~/.histories/fish_history
-    ~/.config/fish/fish_read_history: ~/.histories/fish_read_history
     ~/.config/fisherman: shells/fishshell/fisherman
-    ~/.config/google-chrome: ~/.config/chromium
+
+- shell:
+    - mkdir -p ~/.config/chromium
+    - ln -sf ~/.config/chromium ~/.config/google-chrome
+    - mkdir -p ~/.histories
+    - touch ~/.histories/fish_history
+    - touch ~/.histories/fish_read_history
+    - ln -sf ~/.histories/fish_history ~/.config/fish/fish_history
+    - ln -sf ~/.histories/fish_read_history ~/.config/fish/fish_read_history

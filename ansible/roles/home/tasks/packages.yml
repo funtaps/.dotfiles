@@ -1,0 +1,53 @@
+---
+# Aptitude
+- name: Aptitude
+  apt: name=aptitude state=present
+
+# Repos and keys
+- name: Fish repo
+  apt_repository: repo='ppa:fish-shell/release-2' state='present'
+- name: NeoVim repo
+  apt_repository: repo='ppa:neovim-ppa/unstable' state='present'
+- name: Slack key
+  apt_key: url='https://packagecloud.io/slacktechnologies/slack/gpgkey' state='present'
+- name: Slack repo
+  apt_repository: repo='deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main' state='present'
+- name: Skype repo
+  apt_repository: repo='deb http://archive.canonical.com/ {{ansible_distribution_release}} partner' state='present'
+- name: Chrome key
+  apt_key: url='https://dl-ssl.google.com/linux/linux_signing_key.pub' state='present'
+- name: Chrome repo
+  apt_repository: repo='deb http://dl.google.com/linux/chrome/deb/ stable main' state='present'
+- name: Dropbox key
+  apt_key: keyserver=pgp.mit.edu id=5044912E
+- name: Dropbox repo
+  apt_repository: repo='deb http://linux.dropbox.com/ubuntu natty main' state='present'
+- name: Ansible repo
+  apt_repository: repo='ppa:ansible/ansible' state='present'
+
+- name: Update
+  apt: update_cache=yes
+- name: Upgrade
+  apt: upgrade=yes
+
+# Packages
+- name: Git
+  apt: name=git state=present
+- name: Fish
+  apt: name=fish state=present
+- name: NeoVim
+  apt: name=neovim state=present
+- name: Yakuake
+  apt: name=yakuake state=present
+- name: Slack
+  apt: name=slack-desktop state=present
+- name: Skype
+  apt: name=skype state=present
+- name: Chromiuim
+  apt: name=chromium-browser state=present
+- name: Chrome
+  apt: name=google-chrome-stable state=present
+- name: Dropbox
+  apt: name=dropbox state=present
+- name: Ansible
+  apt: name=ansible state=present

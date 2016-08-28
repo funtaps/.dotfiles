@@ -1,0 +1,9 @@
+---
+- name: Bootstrap home
+  hosts: home
+  roles:
+      - home
+  tasks:
+      - include: roles/home/tasks/packages.yml
+        become: true
+      - include: roles/home/tasks/configs.yml

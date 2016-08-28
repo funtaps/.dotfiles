@@ -1,0 +1,4 @@
+---
+- file: dest=~/home-gitignore state=directory
+- git: repo='https://github.com/funtaps/.dotfiles'
+       dest=~/home-gitignore/dotfiles

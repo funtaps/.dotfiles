@@ -33,6 +33,8 @@
 # Packages
 - name: Git
   apt: name=git state=present
+- name: Curl
+  apt: name=curl state=present
 - name: Fish
   apt: name=fish state=present
 - name: NeoVim

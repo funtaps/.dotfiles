@@ -1,0 +1,1 @@
+/home/kfuntov/.config/fisherman/cmorrell.com/fish_right_prompt.fish

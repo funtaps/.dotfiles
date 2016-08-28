@@ -1,21 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "shells/fishshell/fisherman/cache/git_util"]
-	path = shells/fishshell/fisherman/cache/git_util
-	url = https://github.com/fisherman/git_util
-[submodule "shells/fishshell/fisherman/cache/cmorrell"]
-	path = shells/fishshell/fisherman/cache/cmorrell
-	url = https://github.com/oh-my-fish/theme-cmorrell.com
-[submodule "shells/fishshell/fisherman/cache/grc"]
-	path = shells/fishshell/fisherman/cache/grc
-	url = https://github.com/oh-my-fish/plugin-grc
-[submodule "shells/fishshell/fisherman/cache/bass"]
-	path = shells/fishshell/fisherman/cache/bass
-	url = https://github.com/edc/bass
-[submodule "shells/fishshell/fisherman/cache/thefuck"]
-	path = shells/fishshell/fisherman/cache/thefuck
-	url = https://github.com/oh-my-fish/plugin-thefuck
 [submodule "editors/nvim/plugged/vim-fugitive"]
 	path = editors/nvim/plugged/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -37,6 +22,15 @@
 [submodule "editors/nvim/plugged/vim-surround"]
 	path = editors/nvim/plugged/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "shells/fishshell/fisher"]
-	path = shells/fishshell/fisher
+[submodule "shells/fishshell/fish/functions/fisher"]
+	path = shells/fishshell/fish/functions/fisher
 	url = https://github.com/fisherman/fisherman
+[submodule "shells/fishshell/fisherman/cmorrell.com"]
+	path = shells/fishshell/fisherman/cmorrell.com
+	url = https://github.com/oh-my-fish/theme-cmorrell.com
+[submodule "shells/fishshell/fisherman/git_util"]
+	path = shells/fishshell/fisherman/git_util
+	url = https://github.com/fisherman/git_util
+[submodule "shells/fishshell/fisherman/grc"]
+	path = shells/fishshell/fisherman/grc
+	url = https://github.com/fisherman/grc

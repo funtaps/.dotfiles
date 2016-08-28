@@ -1,0 +1,1 @@
+/home/kfuntov/.config/fisherman/grc/functions/ls.fish

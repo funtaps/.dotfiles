@@ -2,3 +2,24 @@
 - file: dest=~/home-gitignore state=directory
 - git: repo='https://github.com/funtaps/.dotfiles'
        dest=~/home-gitignore/dotfiles
+       update=yes
+       track_submodules=yes
+       version=master
+- file: src=~/home-gitignore/dotfiles/git/gitconfig
+        dest=~/.gitconfig
+        state=link
+- file: src=~/home-gitignore/dotfiles/editors/nvim
+        dest=~/.config/nvim
+        state=link
+- file: src=~/home-gitignore/dotfiles/shells/fishshell/fish
+        dest=~/.config/fish
+        state=link
+- file: src=~/home-gitignore/dotfiles/shells/fishshell/fisherman
+        dest=~/.config/fisherman
+        state=link
+- file: dest=~/.config/chromium state=directory
+- file: src=~/.config/chromium
+        dest=~/.config/google-chrome
+        state=link
+- user: name=kfuntov shell=/usr/bin/fish
+  become: true

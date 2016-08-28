@@ -37,3 +37,6 @@
 [submodule "editors/nvim/plugged/vim-surround"]
 	path = editors/nvim/plugged/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "shells/fishshell/fisher"]
+	path = shells/fishshell/fisher
+	url = https://github.com/fisherman/fisherman

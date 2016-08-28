@@ -31,3 +31,15 @@
 [submodule "shells/fishshell/fisherman/grc"]
 	path = shells/fishshell/fisherman/grc
 	url = https://github.com/fisherman/grc
+[submodule "shells_and_terminals/fishshell/fish/functions/fisher"]
+	path = shells_and_terminals/fishshell/fish/functions/fisher
+	url = https://github.com/fisherman/fisherman
+[submodule "shells_and_terminals/fishshell/fisherman/cmorrell.com"]
+	path = shells_and_terminals/fishshell/fisherman/cmorrell.com
+	url = https://github.com/oh-my-fish/theme-cmorrell.com
+[submodule "shells_and_terminals/fishshell/fisherman/grc"]
+	path = shells_and_terminals/fishshell/fisherman/grc
+	url = https://github.com/oh-my-fish/plugin-grc
+[submodule "shells_and_terminals/fishshell/fisherman/git_util"]
+	path = shells_and_terminals/fishshell/fisherman/git_util
+	url = https://github.com/fisherman/git_util

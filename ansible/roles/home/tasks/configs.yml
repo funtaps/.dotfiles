@@ -21,5 +21,21 @@
 - file: src=~/.config/chromium
         dest=~/.config/google-chrome
         state=link
+- file: dest=~/bin state=directory
 - user: name=kfuntov shell=/usr/bin/fish
   become: true
+
+# psysh
+- name: Create composer directory
+  file: dest=~/home-gitignore/composer state=directory
+- name: Check psysh
+  stat: path=~/home-gitignore/composer/vendor/psy/psysh/bin/psysh
+  register: psysh_bin
+- name: Install psysh
+  composer: command=require arguments=psy/psysh working_dir=home-gitignore/composer
+  when: not psysh_bin.stat.exists
+- name: Link psysh to bin
+  file: src=~/home-gitignore/composer/vendor/psy/psysh/bin/psysh
+        dest=~/bin/psysh
+        state=link
+

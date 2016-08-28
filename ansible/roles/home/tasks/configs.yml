@@ -17,6 +17,9 @@
 - file: src=~/home-gitignore/dotfiles/shells_and_terminals/fishshell/fisherman
         dest=~/.config/fisherman
         state=link
+- file: src=~/home-gitignore/dotfiles/shells_and_terminals/konsole
+        dest=~/.kde/share/apps/konsole
+        state=link
 - file: dest=~/.config/chromium state=directory
 - file: src=~/.config/chromium
         dest=~/.config/google-chrome
@@ -32,7 +35,7 @@
   stat: path=~/home-gitignore/composer/vendor/psy/psysh/bin/psysh
   register: psysh_bin
 - name: Install psysh
-  composer: command=require arguments=psy/psysh working_dir=home-gitignore/composer
+  composer: command=require arguments=psy/psysh working_dir=/home/kfuntov/home-gitignore/composer
   when: not psysh_bin.stat.exists
 - name: Link psysh to bin
   file: src=~/home-gitignore/composer/vendor/psy/psysh/bin/psysh

@@ -11,10 +11,10 @@
 - file: src=~/home-gitignore/dotfiles/editors/nvim
         dest=~/.config/nvim
         state=link
-- file: src=~/home-gitignore/dotfiles/shells/fishshell/fish
+- file: src=~/home-gitignore/dotfiles/shells_and_terminals/fishshell/fish
         dest=~/.config/fish
         state=link
-- file: src=~/home-gitignore/dotfiles/shells/fishshell/fisherman
+- file: src=~/home-gitignore/dotfiles/shells_and_terminals/fishshell/fisherman
         dest=~/.config/fisherman
         state=link
 - file: dest=~/.config/chromium state=directory
